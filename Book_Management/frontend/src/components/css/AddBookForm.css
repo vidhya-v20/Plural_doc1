@@ -1,0 +1,36 @@
+
+
+/* Specific styles for AddBookForm component */
+.add-book-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  width: 800%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.add-book-card {
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: none;
+}
+
+.add-book-title {
+  font-size: 1.5rem;
+}
+
+.add-book-form-label {
+  text-align: left;
+}
+
+.add-book-form-control {
+  width: 100%;
+}
+
+.add-book-image {
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}

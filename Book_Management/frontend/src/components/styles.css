@@ -1,0 +1,166 @@
+/* styles.css */
+
+/* Navbar styles (existing) */
+.navbar {
+  background-color: #2455f4; /* Dark background color */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: rgb(17, 16, 16); /* White text color for links and brand */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #61dafb; /* Hover color for links */
+}
+
+.navbar-toggler {
+  border-color: rgb(219, 12, 36); /* White color for toggler icon */
+}
+
+.navbar-toggler-icon {
+  background-color: rgb(9, 8, 8); /* White color for toggler icon bars */
+}
+
+/* Centered branding and links (existing) */
+.navbar-brand {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 10px; /* Space between links */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: #61dafb; /* Active link color */
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.1); /* Scale up the logo on hover */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navbar-brand img {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+
+@keyframes rotate {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar-brand img {
+  animation: rotate 3s linear infinite; /* Rotate animation */
+}
+
+.navbar-brand img {
+  border: 2px solid transparent; /* Start with a transparent border */
+  transition: border-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navbar-brand:hover img {
+  border-color: #ffc107; /* Change border color on hover */
+}
+
+.book-kingdom {
+  font-family: 'Arial Black', sans-serif; /* Example of a bold and attractive font */
+  font-size: 30px; /* Adjust font size as needed */
+  color: #1c0deabe; /* Custom color for the title */
+  text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.4); /* Text shadow for a 3D effect */
+  letter-spacing: 1px; /* Increased letter spacing for emphasis */
+  transform: skewX(-10deg); /* Skew the text horizontally for a dynamic effect */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for skew effect */
+}
+
+/* Hover effect example */
+.book-kingdom:hover {
+  transform: skewX(-15deg); /* Adjust skew for hover effect */
+}
+
+
+
+/* Carousel caption styles */
+.carousel-caption {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(250, 246, 246); /* Text color */
+}
+
+.carousel-caption h5 {
+  font-size: 2.5rem; /* Adjust heading font size */
+}
+
+.carousel-caption p {
+  font-size: 1.5rem; /* Adjust paragraph font size */
+}
+
+.carousel-caption .btn {
+  margin-top: 10px; /* Adjust button margin */
+}
+
+.custom-list {
+  list-style-type: none;
+  counter-reset: my-counter;
+  padding-left: 0; /* Remove default padding */
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 20px; /* Adjust as needed to create space between arrow and text */
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.custom-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%; /* Adjust to vertically center the arrow */
+  transform: translateY(-50%); /* Center the arrow vertically */
+  width: 10px; /* Adjust as needed */
+  height: 10px; /* Adjust as needed */
+  border-style: solid;
+  border-width: 2px 2px 0 0; /* Adjust to create arrow shape */
+  transform: rotate(45deg); /* Rotate to create arrow shape */
+  transform-origin: top left;
+  color: #007bff; /* Example color */
+  margin-left: 55px;
+}
+
+
+
+.h1{
+  text-align: left;
+}
+
+/* Animation for moving text */
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Apply animation to the heading */
+#about h2 {
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides overflowed text */
+  animation: moveRightToLeft 20s linear infinite; /* Adjust animation duration and timing as needed */
+}
+
+

@@ -1,0 +1,72 @@
+/* styles.css */
+
+/* Navbar_inner styles */
+.navbar-inner {
+  background-color: #2455f4; /* Dark background color */
+}
+
+.navbar-inner .navbar-brand,
+.navbar-inner .navbar-nav .nav-link {
+  color: #111010; /* White text color for links and brand */
+}
+
+.navbar-inner .navbar-nav .nav-link:hover {
+  color: #61dafb; /* Hover color for links */
+}
+
+.navbar-inner .navbar-toggler {
+  border-color: #db0c24; /* Red color for toggler icon */
+}
+
+.navbar-inner .navbar-toggler-icon {
+  background-color: #090808; /* Black color for toggler icon bars */
+}
+
+/* Centered branding and links */
+.navbar-inner .navbar-brand {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-inner .navbar-nav {
+  margin-left: auto;
+  margin-right: 0; /* Adjust to push Home link to the right */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center align items vertically */
+}
+
+.navbar-inner .navbar-nav .nav-item {
+  margin-right: 10px; /* Space between links */
+}
+
+.navbar-inner .navbar-nav .nav-item.active .nav-link {
+  color: #61dafb; /* Active link color */
+}
+
+.navbar-inner .navbar-brand:hover img {
+  transform: scale(1.1); /* Scale up the logo on hover */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navbar-inner .navbar-brand img {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Home icon styles */
+.navbar-inner .home-icon {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+/* Footer styles */
+.footer {
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2455f4;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
